@@ -1,0 +1,4 @@
+{application, bootling, [
+	{description, "LING bootloader"},
+	{vsn, "1.0"}
+]}.

@@ -1,0 +1,8 @@
+deps
+domain_config
+bootling.img
+*.beam
+.railing
+.rebar
+rebar
+ebin
