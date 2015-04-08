@@ -1,7 +1,7 @@
 .PHONY: default bootling install
 default: lingd bootling
 
-CFLAGS := -O2 -flto
+CFLAGS := -O2
 
 LINGD := \
 	src/lingd.o \
@@ -82,12 +82,13 @@ $(LINGD): %.o: %.c
 	gcc -c $< \
 		-Ideps/diod/libnpfs \
 		-Ideps/munge/src/munged \
+		-Ideps/munge/src/libmunge \
 		-Ideps/diod/diod \
 		-Ideps/diod/libdiod \
 		-Ideps/diod/libnpclient \
 		-Ideps/diod/liblsd \
 		-Ideps/libbridge \
-		$(CFLAGS) -std=gnu11 -D_GNU_SOURCE -o $@
+		$(CFLAGS) -std=gnu99 -D_GNU_SOURCE -o $@
 		
 
 $(DIOD): %.o: %.c

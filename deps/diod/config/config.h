@@ -227,7 +227,7 @@
 #define HAVE_UNISTD_H 1
 
 /* Define to 1 if you have the `utimensat' function. */
-#define HAVE_UTIMENSAT 1
+//#define HAVE_UTIMENSAT 1
 
 /* Define to 1 if you have the `vasprintf' function. */
 #define HAVE_VASPRINTF 1
