@@ -12,7 +12,6 @@
 #include <unistd.h>
 #include <getopt.h>
 
-#include <linux/in6.h>
 #include "libbridge.h"
 // munge
 #include "conf.h"
